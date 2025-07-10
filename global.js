@@ -274,6 +274,8 @@ function buttonHover() {
     const icon = link.querySelector('[data-button="icon"]');
     const iconHover = link.querySelector('[data-button="icon-hover"]');
 
+    if (!icon) return;
+
     link.addEventListener("mouseenter", () => {
       if (!link._tl) {
         link._tl = gsap
